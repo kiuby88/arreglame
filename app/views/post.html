@@ -1,8 +1,9 @@
-<div class="panel panel-default">
+<div class="col-sm-6 col-lg-3">
+<div class="panel panel-default" ng-controller="PostCtrl" >
   <div class="panel-heading">
-    <h4>Agujero en C/Juan de Austria</h4>
-    <small>Creado por: </small><a href="#"><strong>Javier García</strong></a>
-    <span class="badge badge-success pull-right">+30</span>
+    <h4>{{post.title}}</h4>
+    <small>Creado por: </small><a href="#"><strong>{{post.user}}</strong></a>
+    <span class="badge badge-success pull-right">+{{post.points}}</span>
   </div>
   <div class="panel-body">
 
@@ -11,8 +12,18 @@
     Palabras clave: <a href="#">agujero</a>, <a href="#">calzada</a>, <a href="#">arreglo</a>, <a href="#">importante</a>
     <div class="clearfix"></div>
     <hr>
-    <p>Hay un agujero gigante en la calle Juan de Austria. Pone en peligro la seguridad de los vehículos y los viandantes.</p>
+    <p>{{post.description}}</p>
     <hr>
+    <ul class="commentList">
+      <li ng-repeat="comment in post.comments">
+        <div>
+          <img class="commentImage" ng-src="{{comment.userThumbnail}}">
+        </div>
+        <div class="commentText"><a href="#"><strong>{{comment.userName}}</strong></a>
+          <p>{{comment.text}}</p><span class="date sub-text">{{comment.date | date : format : timezone}}</span>
+        </div>
+      </li>
+    </ul>
     <form>
       <div class="input-group">
         <div class="input-group-btn">
@@ -21,6 +32,6 @@
         <input type="text" class="form-control" placeholder="Escribe un comentario...">
       </div>
     </form>
-
   </div>
+</div>
 </div>

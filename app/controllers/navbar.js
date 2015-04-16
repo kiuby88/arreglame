@@ -1,6 +1,5 @@
 'use strict';
 
-
 angular.module('arreglameApp.navbar', [])
   .controller('NavbarCtrl', function ($scope) {
 

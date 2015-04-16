@@ -11,6 +11,7 @@ angular.module('arreglameApp.post', [])
     return {
       restrict: 'E',
       templateUrl: 'views/post.html',
-      controller: 'PostCtrl'
+      controller: 'PostCtrl',
+      scope: { post: "=" }
     };
   });
