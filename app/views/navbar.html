@@ -1,8 +1,8 @@
 <nav class="navbar navbar-fixed-top header">
-  <div class="col-md-12">
+  <div class="container-fluid">
     <div class="navbar-header">
 
-      <a href="#" class="navbar-brand">Arregla-me</a>
+      <a href="#/main" class="navbar-brand">Arregla-me</a>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
         <i class="glyphicon glyphicon-search"></i>
       </button>
@@ -21,8 +21,8 @@
       </div>
       <div class="navbar-right">
         <ul class="nav navbar-nav">
-          <li ng-class="{active : currentView == 'postwall'}"><a ng-click="setCurrentView('postwall')"><i class="glyphicon glyphicon-th-large"></i> Mural de incidencias</a></li>
-          <li ng-class="{active : currentView == 'profile'}"><a ng-click="setCurrentView('profile')"><i   class="glyphicon glyphicon-user"></i> Perfil de usuario</a></li>
+          <li ng-class="{'active' : currentView == 'postwall'}"><a ng-click="setCurrentView('postwall')"><i class="glyphicon glyphicon-th-large"></i> Mural de incidencias</a></li>
+          <li ng-class="{'active' : currentView == 'profile'}"><a ng-click="setCurrentView('profile')"><i class="glyphicon glyphicon-user"></i> Perfil de usuario</a></li>
         </ul>
       </div>
     </div>

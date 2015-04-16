@@ -1,20 +1,28 @@
 <div class="col-sm-6 col-lg-3">
-<div class="panel panel-default" ng-controller="PostCtrl" >
+<div class="panel panel-default" >
   <div class="panel-heading">
-    <h4>{{post.title}}</h4>
+    <h4><strong>{{post.title}}</strong></h4>
     <small>Creado por: </small><a href="#"><strong>{{post.user}}</strong></a>
     <span class="badge badge-success pull-right">+{{post.points}}</span>
   </div>
   <div class="panel-body">
-
+    <p>Palabras clave: <a ng-repeat="tag in post.tags"> {{tag}} </a></p>
     <img src="//static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/7/12/1342109726142/hole-in-road-didsbury-man-008.jpg" class="img-responsive">
-    <br>
-    Palabras clave: <a href="#">agujero</a>, <a href="#">calzada</a>, <a href="#">arreglo</a>, <a href="#">importante</a>
-    <div class="clearfix"></div>
-    <hr>
+
+    <h6><strong>Descripcion</strong></h6>
     <p>{{post.description}}</p>
-    <hr>
-    <ul class="commentList">
+    <form>
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-default">+1</button>
+          <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="glyphicon glyphicon-share"></i></button>
+        </div>
+        <input type="text" class="form-control" placeholder="Escribe un comentario...">
+      </div>
+    </form>
+
+
+    <ul class="commentList collapse" id="collapseExample">
       <li ng-repeat="comment in post.comments">
         <div>
           <img class="commentImage" ng-src="{{comment.userThumbnail}}">
@@ -24,14 +32,6 @@
         </div>
       </li>
     </ul>
-    <form>
-      <div class="input-group">
-        <div class="input-group-btn">
-          <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-        </div>
-        <input type="text" class="form-control" placeholder="Escribe un comentario...">
-      </div>
-    </form>
   </div>
 </div>
 </div>
