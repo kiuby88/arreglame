@@ -2,10 +2,12 @@
   "name": "arreglame",
   "version": "0.0.0",
   "dependencies": {
+    "bower": "^1.4.1",
     "grunt": "^0.4.5"
   },
   "repository": {},
   "devDependencies": {
+    "bower": "^1.4.1",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
@@ -40,7 +42,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "http-server app -a localhost -p 8000 -c-1",
+    "start": "grunt serve",
     "test": "grunt test"
   }
 }
