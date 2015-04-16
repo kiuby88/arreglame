@@ -6,6 +6,7 @@ var arreglameApp = angular.module('arreglameApp', [
     'ngAnimate',
     'arreglameApp.main',
     'arreglameApp.signin',
+    'arreglameApp.profile'
 ]);
 
 arreglameApp.config(['$routeProvider', function($routeProvider) {

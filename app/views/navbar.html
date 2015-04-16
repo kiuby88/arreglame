@@ -9,59 +9,25 @@
 
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse1">
-      <form class="navbar-form pull-left">
-        <div class="input-group" style="max-width:470px;">
-          <input type="text" class="form-control" placeholder="Búsqueda" name="srch-term" id="srch-term">
-          <div class="input-group-btn">
-            <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      <div class="navbar-left">
+        <form class="navbar-form pull-left">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Búsqueda" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+              <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
           </div>
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-bell"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><span class="badge pull-right">40</span>Link</a></li>
-            <li><a href="#"><span class="badge pull-right">2</span>Link</a></li>
-            <li><a href="#"><span class="badge pull-right">0</span>Link</a></li>
-            <li><a href="#"><span class="label label-info pull-right">1</span>Link</a></li>
-            <li><a href="#"><span class="badge pull-right">13</span>Link</a></li>
-          </ul>
-        </li>
-        <li><a href="#" id="btnToggle"><i class="glyphicon glyphicon-th-large"></i></a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
-      </ul>
+        </form>
+      </div>
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li ng-class="{active : currentView == 'postwall'}"><a ng-click="setCurrentView('postwall')"><i class="glyphicon glyphicon-th-large"></i> Mural de incidencias</a></li>
+          <li ng-class="{active : currentView == 'profile'}"><a ng-click="setCurrentView('profile')"><i   class="glyphicon glyphicon-user"></i> Perfil de usuario</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
-<div class="navbar navbar-default" id="subnav">
-  <div class="col-md-12">
-    <div class="navbar-header">
-
-      <a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-home" style="color:#dd1111;"></i> Inicio <small><i class="glyphicon glyphicon-chevron-down"></i></small></a>
-      <ul class="nav dropdown-menu">
-        <li><a href="#"><i class="glyphicon glyphicon-dashboard" ></i> Nuevo aviso</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-user" ></i> Mis avisos</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-cog" ></i> Ajustes</a></li>
-      </ul>
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse2">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Posts</a></li>
-        <li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>
-        <li><a href="#aboutModal" role="button" data-toggle="modal">Acerca de...</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 <!--login modal-->
 <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">

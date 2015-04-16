@@ -8,7 +8,16 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
       controller: 'MainCtrl'
     })
   }])
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $location) {
+
+
+    $scope.currentView = "postwall";
+
+    $scope.setCurrentView = function(target){
+      $scope.currentView = target;
+    }
+
+
 
 
 

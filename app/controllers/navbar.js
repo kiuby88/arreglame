@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module('arreglameApp.navbar', [])
+
+angular.module('arreglameApp.navbar', ['arreglameApp.main'])
   .controller('NavbarCtrl', function ($scope) {
-
-
 
   })
   .directive('navbar', function() {

@@ -1,5 +1,6 @@
 <navbar></navbar>
 <div class="container-fluid" id="main">
-    <postwall></postwall>
+    <postwall ng-show="currentView == 'postwall'"></postwall>
+    <profile ng-show="currentView == 'profile'"></profile>
 </div>
 <footer></footer>
