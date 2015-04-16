@@ -3,7 +3,7 @@
 
 angular.module('arreglameApp.signin', ['ngRoute'])
   .config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/', {
+    $routeProvider.when('/signin', {
       templateUrl: 'views/signin.html',
       controller: 'SigninCtrl'
     })

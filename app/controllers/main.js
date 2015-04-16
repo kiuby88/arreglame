@@ -3,7 +3,7 @@
 
 angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglameApp.postwall', 'arreglameApp.footer'])
   .config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/', {
+    $routeProvider.when('/main', {
       templateUrl: 'views/main.html',
       controller: 'MainCtrl'
     })

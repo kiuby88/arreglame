@@ -2,8 +2,12 @@
 
 
 angular.module('arreglameApp.footer', [])
+  .controller('footerCtrl', function ($scope) {
 
-  .directive('postwall', function() {
+
+
+  })
+  .directive('footer', function() {
     return {
       restrict: 'E',
       templateUrl: 'views/footer.html'
