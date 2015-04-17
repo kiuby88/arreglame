@@ -139,3 +139,43 @@
   transform: rotateX(0deg);
   z-index: 20;
 }
+
+.big-icon-box {
+  margin: 5px -5px;
+  background-color: #2196F3;
+  color: #ffffff;
+
+  -webkit-transition: 200ms linear;
+  -moz-transition: 200ms linear;
+  -ms-transition: 200ms linear;
+  -o-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.big-icon-title > h4{
+  padding: 10px 0px;
+}
+
+.big-icon-box:hover {
+  box-shadow: 4px 4px 0px #D0D0D0;
+  color: #1E3A74;
+}
+
+.big-icon i {
+  font-size: 76px;
+  padding-bottom: 12px
+}
+
+.drop-box {
+  background: #F8F8F8;
+  border: 5px dashed #DDD;
+  width: auto;
+  height: 100px;
+  text-align: center;
+  padding-top: 25px;
+  margin: 10px 0px;
+}
+
+.mfb-component__button--main, .mfb-component__button--child {
+  background-color: #4285f4;
+}

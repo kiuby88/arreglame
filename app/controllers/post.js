@@ -1,6 +1,5 @@
 'use strict';
 
-
 angular.module('arreglameApp.post', [])
   .controller('PostCtrl', function ($scope) {
     $scope.mapVisible = false;
@@ -8,10 +7,11 @@ angular.module('arreglameApp.post', [])
 
     $scope.toggleMapView = function(){
       $scope.mapVisible = !$scope.mapVisible;
-    }
+    };
 
-
-
+    $scope.addComment = function(comment){
+      $scope.getPost().comments.append(comment);
+    };
   })
   .directive('post', function() {
 

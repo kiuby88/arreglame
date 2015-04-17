@@ -28,6 +28,8 @@ module.exports = function(config) {
       'app/bower_components/d3/d3.js',
       'app/bower_components/ng-mfb/src/mfb-directive.js',
       'app/bower_components/ngmap/build/scripts/ng-map.js',
+      'app/bower_components/ng-file-upload/angular-file-upload.js',
+      'app/bower_components/ng-file-upload-shim/angular-file-upload-shim.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

@@ -1,3 +1,137 @@
 <div class="row-fluid" >
-  <post ng-repeat="post in postList" post="post"></post>
+  <post ng-repeat="post in postList track by $index" post="post"></post>
+
+</div>
+<nav mfb-menu position="br" effect="zoomin" label="Cerrar menu"
+     active-icon="ion-edit" resting-icon="ion-plus-round"
+     toggling-method="click">
+  <a mfb-button icon="ion-speakerphone" label="Informar sobre un incidente" href="#newPostModal"
+     role="button" data-toggle="modal" ng-click="clearForm()"></a>
+</nav>
+
+<!--about modal-->
+<div id="newPostModal" ng-controller="PostwallCtrl" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" reset-on-dismiss>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h2 class="text-center">Seleccione el tipo de incidente</h2>
+      </div>
+      <div class="modal-body">
+        <div ng-show="newPost.category == ''">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'Calzadas'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Calzadas</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="fa fa-car"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'MalagaBici'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">MalagaBici</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="fa fa-bicycle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'Instalaciones'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Instalaciones</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="fa fa-bolt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'Parques'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Parques</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="fa fa-tree"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'Papeleras'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Papeleras</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="ion-trash-a"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="big-icon-box" ng-click="newPost.category = 'Ideas'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Ideas</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="ion-android-bulb"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="big-icon-box" ng-click="newPost.category = 'Otros'">
+                <div class="big-icon-title">
+                  <h4 class="text-center">Otra categoría</h4>
+                </div>
+                <div class="big-icon text-center">
+                  <i class="ion-more"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-hide="newPost.category == ''">
+          <h3>{{newPost.category}}</h3>
+          <div class="row">
+            <form class="col-lg-12">
+              <div class="form-group">
+                <label for="title">Nombre de la incidencia</label>
+                <input type="text" class="form-control" ng-model="newPost.title" id="title" placeholder="Escriba un título para la incidencia">
+              </div>
+              <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea type="text" class="form-control" ng-model="newPost.description" rows="3" id="description" placeholder="Describa el problema"></textarea>
+              </div>
+              <div class="form-group">
+               Añade una foto: <div class="btn btn-default button" ng-file-select ng-file-change="upload($files)" ng-multiple="multiple">Subir fichero</div>
+                <div ng-file-drop ng-file-select ng-model="files" class="drop-box"
+                     drag-over-class="dragover" ng-multiple="true" allow-dir="true"
+                     accept="image/*,application/pdf">También puedes arrastrarla aquí...</div>
+                <div ng-no-file-drop>Tu explorador no soporta el arrastre de archivos. Utiliza el botón 'Seleccionar foto'</div>
+                <ul>
+                  <li ng-repeat="f in files" style="font:smaller">{{f.name}}</li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <label for="keywords">Palabras clave</label>
+                <input type="email" class="form-control" ng-model="newPost.keywords" id="keywords" placeholder="Por p.ej: 'agujero importante calzada'">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-success" data-dismiss="modal" ng-click="addNewPost()" aria-hidden="true">OK</button>
+      </div>
+    </div>
+  </div>
 </div>

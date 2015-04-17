@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglameApp.postwall', 'arreglameApp.footer'])
+angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglameApp.postwall', 'arreglameApp.footer', 'ng-mfb'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/main', {
       templateUrl: 'views/main.html',
@@ -10,7 +10,6 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
   }])
   .controller('MainCtrl', function ($scope) {
 
-
     var postsListInit = [
       {
         title : "Agujero en C/ Juan de Austria",
@@ -18,6 +17,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
         keywords : ["agujero", "calle", "peligro"],
         description : "Un gran agujero ha aparecido en la calle Juan de Austria, dos vecinos míos cayeron al vacío, " +
         "no se olviden de sacarlos.",
+        picture : "//static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/7/12/1342109726142/hole-in-road-didsbury-man-008.jpg",
         tags: ["agujero", "calzada", "coche"],
         image: "images/socavon2.jpg",
         latitude:"36.7251368",
@@ -93,6 +93,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
         keywords : ["agujero", "calle", "peligro"],
         description : "Un gran agujero ha aparecido en la calle Juan de Austria, dos vecinos míos cayeron al vacío, " +
         "no se olviden de sacarlos.",
+        picture : "//static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/7/12/1342109726142/hole-in-road-didsbury-man-008.jpg",
         tags: ["agujero", "calzada", "coche"],
         image: "images/socavon2.jpg",
         latitude:"36.7251368",
