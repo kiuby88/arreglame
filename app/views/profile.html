@@ -1,7 +1,6 @@
 <div class="row">
     <div class="col-sm-3">
       <div class="row">
-
         <div class="col-sm-12">
           <div class="thumbnail">
             <img class="img-circle img-responsive" width="80%" src="{{profileImage}}">
@@ -22,7 +21,6 @@
             </li>
           </ul>
         </div>
-
         <div class="col-sm-12">
           <ul class="list-group">
             <li class="list-group-item text-muted" style="background: #4285f4; color: white">Actividad <i class="fa fa-dashboard fa-1x"></i>
@@ -46,14 +44,13 @@
         </div>
       </div>
     </div>
-
     <!--/col-3-->
     <div class="col-sm-9" contenteditable="false" style="">
       <div class="panel panel-default target">
         <div class="panel-heading" contenteditable="false">Eventos sugeridos</div>
         <div class="panel-body">
           <div class="row">
-            <post ng-repeat="post in postList | byPostUser:userName" post="post"></post>
+            <post ng-repeat="post in postList | byPostUser:userName" showComments="true" post="post"></post>
           </div>
         </div>
       </div>
@@ -161,3 +158,4 @@
     </div>
   </div>
 </div>
+      <script language="JavaScript">

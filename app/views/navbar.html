@@ -21,6 +21,9 @@
       </div>
       <div class="navbar-right">
         <ul class="nav navbar-nav">
+
+          <li><a href="#modalMap" role="button" data-toggle="modal" ><i class="glyphicon glyphicon-map-marker"></i> Mapa de incidencias</a></li>
+
           <li ng-class="{'active' : currentView == 'postwall'}"><a ng-click="setCurrentView('postwall')"><i class="glyphicon glyphicon-th-large"></i> Mural de incidencias</a></li>
           <li ng-class="{'active' : currentView == 'profile'}"><a ng-click="setCurrentView('profile')"><i class="glyphicon glyphicon-user"></i> Perfil de usuario</a></li>
         </ul>
@@ -55,6 +58,23 @@
         <div class="col-md-12">
           <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--login modal-->
+<div id="modalMap" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h2>Mapa de incidencias</h2>
+      </div>
+      <div class="modal-body" style="height: 500px">
+        <map class="map-view" center="{{centerPosition.latitude}}, {{centerPosition.longitude}} "  zoom="12">
+          <marker ng-repeat="post in postList" position="{{post.latitude}}, {{post.longitude}}" animation="DROP" draggable="true"></marker>
+        </map>
       </div>
     </div>
   </div>
