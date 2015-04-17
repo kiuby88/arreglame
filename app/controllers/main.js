@@ -34,7 +34,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :100
       },
 
       {
@@ -58,7 +58,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :539
       },
 
       {
@@ -82,7 +82,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :21766
       },
 
 
@@ -108,7 +108,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :3567
       },
 
       {
@@ -133,7 +133,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :7
       },
       {
         title : "Parking en el PTA",
@@ -156,7 +156,7 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
             text:"Yo no creo que sea tan importante, a fin de cuentas no vivo allí.",
             date: Date.now()
           }],
-        points :2
+        points :3001
       }
 
 
