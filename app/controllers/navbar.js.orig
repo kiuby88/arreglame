@@ -1,0 +1,21 @@
+'use strict';
+
+<<<<<<< Updated upstream
+angular.module('arreglameApp.navbar', [])
+=======
+
+angular.module('arreglameApp.navbar', ['arreglameApp.main'])
+>>>>>>> Stashed changes
+  .controller('NavbarCtrl', function ($scope) {
+
+    $scope.texto=$scope.showPane;
+
+
+  })
+  .directive('navbar', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'views/navbar.html',
+      controller: 'NavbarCtrl'
+    };
+  });

@@ -1,12 +1,12 @@
 'use strict';
 
-
 var arreglameApp = angular.module('arreglameApp', [
     'ngRoute',
     'ngAnimate',
     'arreglameApp.main',
     'arreglameApp.signin',
-    'arreglameApp.profile'
+    'arreglameApp.profile',
+    'ng-mfb',
 ]);
 
 arreglameApp.config(['$routeProvider', function($routeProvider) {

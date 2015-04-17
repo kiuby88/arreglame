@@ -26,6 +26,8 @@ module.exports = function(config) {
       'app/bower_components/jquery-ui/jquery-ui.js',
       'app/bower_components/angular-local-storage/dist/angular-local-storage.js',
       'app/bower_components/d3/d3.js',
+      'app/bower_components/ng-mfb/src/mfb-directive.js',
+      'app/bower_components/angular-ui-sortable/sortable.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
