@@ -87,11 +87,19 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
 
 
       {
+<<<<<<< Updated upstream
+        title : "Agujero en C/ Juan de Austria",
+        user : "Manolo Cara Puño",
+        keywords : ["agujero", "calle", "peligro"],
+        description : "Un gran agujero ha aparecido en la calle Juan de Austria, dos vecinos míos cayeron al vacío, " +
+        "no se olviden de sacarlos.",
+        picture : "//static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/7/12/1342109726142/hole-in-road-didsbury-man-008.jpg",
+=======
         title : "Carril bici con obstaculos",
         user : "Sherlock",
         keywords : ["defecto", "calle", "peligro"],
         description : "Obstaculo en mitad de un carrir bici. Peligroso si tu bici no tiene cohete.",
-        picture : "//static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/7/12/1342109726142/hole-in-road-didsbury-man-008.jpg",
+>>>>>>> Stashed changes
         tags: ["agujero", "calzada", "coche"],
         image: "images/bici.jpg",
         latitude:"36.7120604",
