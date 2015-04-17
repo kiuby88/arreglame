@@ -19,8 +19,8 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
         description : "Un gran agujero ha aparecido en la calle Juan de Austria, ayer dos vecinos míos cayeron al vacío, " +
         "por favor no se olviden de sacar a la gente de dentro antes de taparlo.",
         tags: ["agujero", "calzada", "coche"],
-        latitude:"",
-        longitude:"",
+        latitude : 36.7251368,
+        longitude :-4.4288284,
         comments : [{
           userName: "María Sánchez",
           userThumbnail: "http://www.femto.it/wp-content/uploads/2014/04/default-user-avatar.png",
@@ -42,8 +42,8 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
         description : "Un gran agujero ha aparecido en la calle Juan de Austria, ayer dos vecinos míos cayeron al vacío, " +
         "por favor no se olviden de sacar a la gente de dentro antes de taparlo.",
         tags: ["agujero", "calzada", "coche"],
-        latitude:"",
-        longitude:"",
+        latitude : 36.7251368,
+        longitude :-4.4288284,
         comments : [{
           userName: "María Sánchez",
           userThumbnail: "http://www.femto.it/wp-content/uploads/2014/04/default-user-avatar.png",
@@ -65,8 +65,8 @@ angular.module('arreglameApp.main', ['ngRoute', 'arreglameApp.navbar', 'arreglam
         description : "Un gran agujero ha aparecido en la calle Juan de Austria, ayer dos vecinos míos cayeron al vacío, " +
         "por favor no se olviden de sacar a la gente de dentro antes de taparlo.",
         tags: ["agujero", "calzada", "coche"],
-        latitude:"",
-        longitude:"",
+        latitude : 36.7251368,
+        longitude :-4.4288284,
         comments : [{
           userName: "María Sánchez",
           userThumbnail: "http://www.femto.it/wp-content/uploads/2014/04/default-user-avatar.png",

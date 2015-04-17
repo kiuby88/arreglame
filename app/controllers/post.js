@@ -3,6 +3,12 @@
 
 angular.module('arreglameApp.post', [])
   .controller('PostCtrl', function ($scope) {
+    $scope.mapVisible = false;
+
+
+    $scope.toggleMapView = function(){
+      $scope.mapVisible = !$scope.mapVisible;
+    }
 
 
 
@@ -14,4 +20,5 @@ angular.module('arreglameApp.post', [])
       controller: 'PostCtrl',
       scope: { post: "=" }
     };
-  });
+  })
+
