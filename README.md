@@ -1,12 +1,25 @@
-# tareas
+# Arregla-Me - HackForGood 2015
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+**Arregla-Me** es una aplicación de colaboración ciudadana, desarrollada en 27 horas para la *hackaton* de HackForGood'15. 
 
-## Build & development
+La aplicación permite a los usuarios realizar **propuestas** y reportar **incidentes** en su ciudad, integrando un sistema de puntuación sobre las propuestas que permite **clasificar** y destacar aquellas de mayor interés para los ciudadanos.
 
-Run `grunt` for building and `grunt serve` for preview.
+## Guía de instalación (Desarrollo)
+
+Sobre el directorio raíz de la aplicación ejecuta:
+```
+grunt 
+grunt serve
+```
+Una vez completada la instalación, podrás acceder en [http://localhost:9000](http://localhost:9000).
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+```
+grunt test
+```
+
+## Credits to...
+  - [adriannieto](https://github.com/adriannieto)
+  - [kiuby88](https://github.com/kiuby88)
+  - [mbarrientos](https://github.com/mbarrientos)
